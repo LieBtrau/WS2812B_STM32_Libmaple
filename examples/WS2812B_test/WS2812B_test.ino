@@ -1,6 +1,6 @@
 #include <WS2812B.h>
 
-#define NUM_LEDS 30
+#define NUM_LEDS 270
 /*
  * Note. Library uses SPI1
  * Connect the WS2812B data input to MOSI on your board.
@@ -44,12 +44,6 @@ void loop()
   theaterChase(strip.Color(0, 255, 0), 20); // Green
   theaterChase(strip.Color(0, 0, 255), 20); // Blue
   theaterChaseRainbow(10);
-  whiteOverRainbow(20,75,5);  
-  pulseWhite(5); 
-  delay(250);
-  fullWhite();
-  delay(250);
-  rainbowFade2White(3,3,1);
 }
 
 // Fill the dots one after the other with a color
